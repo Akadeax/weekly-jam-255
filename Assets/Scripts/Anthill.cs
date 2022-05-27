@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnthillController : MonoBehaviour
+public class Anthill : MonoBehaviour
 {
 
     void Start()
