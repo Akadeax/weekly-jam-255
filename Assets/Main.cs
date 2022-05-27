@@ -15,7 +15,7 @@ public class Main : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            SFXManager.PlaySFX("Exp");
+            SFXManager.PlaySFX("Explosion");
         }
     }
 }

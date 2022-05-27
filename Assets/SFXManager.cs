@@ -37,9 +37,11 @@ public class SFXManager : MonoBehaviour
             return;
         }
 
-        AudioClip clip = clips.First(x => x.name == name).clip;
+        SFXClip clip = clips.First(x => x.name == name);
+        AudioClip audioClip = clip.clip;
         AudioSource src = GetFirstEmptySrc();
-        src.clip = clip;
+        src.clip = audioClip;
+        src.volume = clip.volume;
         src.Play();
     }
 
@@ -63,6 +65,8 @@ public class SFXManager : MonoBehaviour
 [System.Serializable]
 public class SFXClip
 {
-    public string name;
+    public string name = "Clip";
     public AudioClip clip;
+    [Range(0, 1)]
+    public float volume = 1f;
 }
