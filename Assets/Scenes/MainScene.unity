@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 223426354}
   - component: {fileID: 223426353}
-  - component: {fileID: 223426352}
   m_Layer: 0
   m_Name: SFXManager
   m_TagString: Untagged
@@ -141,18 +140,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &223426352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223426351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49a398d74c9401f42919d67576f12ea4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &223426353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,10 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e41f914405e2314aa324a14b3689a22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clips:
-  - name: Explosion
-    clip: {fileID: 8300000, guid: 90d92571a48b0584f93717dc53df7bcc, type: 3}
-    volume: 0.217
+  clips: []
   channelAmount: 5
 --- !u!4 &223426354
 Transform:
