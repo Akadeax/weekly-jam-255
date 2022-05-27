@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 223426353}
   - component: {fileID: 223426352}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: SFXManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -166,8 +166,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clips:
-  - name: Exp
+  - name: Explosion
     clip: {fileID: 8300000, guid: 90d92571a48b0584f93717dc53df7bcc, type: 3}
+    volume: 0.217
   channelAmount: 5
 --- !u!4 &223426354
 Transform:
