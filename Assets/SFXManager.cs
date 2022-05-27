@@ -55,7 +55,7 @@ public class SFXManager : MonoBehaviour
             if (!src.isPlaying) return src;
         }
 
-        Debug.LogError($"Couldn't find empty audio channel; Please increase the channel amount.");
+        Debug.LogError($"Couldn't find empty audio channel. Please increase the channel amount.");
         return null;
     }
 }
