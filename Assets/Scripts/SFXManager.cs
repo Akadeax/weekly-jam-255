@@ -29,7 +29,7 @@ public class SFXManager : MonoBehaviour
         }
     }
 
-    private void _PlaySFX(string name)
+    private void _PlaySFX(string name, float pitch)
     {
         if(!clips.Exists(x => x.name == name))
         {
@@ -42,12 +42,18 @@ public class SFXManager : MonoBehaviour
         AudioSource src = GetFirstEmptySrc();
         src.clip = audioClip;
         src.volume = clip.volume;
+        src.pitch = pitch;
         src.Play();
     }
 
     public static void PlaySFX(string name)
     {
-        instance._PlaySFX(name);
+        instance._PlaySFX(name, 1);
+    }
+
+    public static void PlaySFX(string name, float pitch)
+    {
+        instance._PlaySFX(name, pitch);
     }
 
     private AudioSource GetFirstEmptySrc()
